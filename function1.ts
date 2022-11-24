@@ -28,6 +28,11 @@ function pow(value: number , exponent = 10):number {
 console.log(pow(10));
 console.log(pow(10,2));
 
+function divide({dividend, divisor }: {dividend: number ,divisor: number }) {
+    return dividend / divisor;
+}
+console.log(divide({dividend: 100 ,divisor:10}));
+
 
 
 
