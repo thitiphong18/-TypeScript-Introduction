@@ -37,3 +37,24 @@ const sq = new Square(10);
 console.log(sq);
 console.log(sq.getArea());
 console.log(sq.toString());
+
+abstract class Polygen {
+    public abstract getArea(): number;
+
+    public toString(): string {
+        return `Polygen[area=${this.getArea()}]`
+    }
+}
+
+class Rectangle2 extends Polygen {
+    public constructor(protected width:number, protected readonly height: number) {
+        super();
+    }
+    public getArea(): number {
+        throw this.width * this.height;
+    }
+}
+const rect2:Rectangle2 = new Rectangle2(50,10);
+console.log(rect2);
+console.log(rect2.toString());
+
