@@ -21,6 +21,13 @@ function add(a: number , b:number , c?:number):number {
 console.log(add(1,2,3));
 console.log(add(1,2));
 
+function pow(value: number , exponent = 10):number {
+    return  value ** exponent ;
+}
+
+console.log(pow(10));
+console.log(pow(10,2));
+
 
 
 
