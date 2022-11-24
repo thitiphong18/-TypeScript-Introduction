@@ -33,6 +33,24 @@ function divide({dividend, divisor }: {dividend: number ,divisor: number }) {
 }
 console.log(divide({dividend: 100 ,divisor:10}));
 
+function add2(a: number , b:number, ...rest:number[]) {
+    return a + b + rest.reduce((p,c) => p+c, 0);
+}
+
+console.log(add2(1,2,3,4,5));
+type Negate = (value: number ) => number;
+
+const negateFunction: Negate = (value: number) => value *-1;
+const negateFunction2: Negate = function(value: number): number{
+    return value*-1
+};
+console.log(negateFunction(1));
+console.log(negateFunction2(1));
+
+
+
+
+
 
 
 
