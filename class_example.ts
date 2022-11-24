@@ -24,3 +24,12 @@ const rect:Rectangle1 = new Rectangle1(50, 10) ;
 console.log(rect);
 console.log(rect.getArea());
 
+class Square extends Rectangle1 {
+    public constructor(width: number) {
+        super(width,width);
+    }    
+}
+
+const sq = new Square(10);
+console.log(sq);
+console.log(sq.getArea());
