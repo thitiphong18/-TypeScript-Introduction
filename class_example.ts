@@ -28,8 +28,12 @@ class Square extends Rectangle1 {
     public constructor(width: number) {
         super(width,width);
     }    
+    public toString(): string {
+        return `Square [${this.width}]`;
+    }
 }
 
 const sq = new Square(10);
 console.log(sq);
 console.log(sq.getArea());
+console.log(sq.toString());
