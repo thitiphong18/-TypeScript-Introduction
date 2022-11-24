@@ -5,3 +5,7 @@ w = {
         console.log("I think therefore I am")
     }        
 } as { runANonExistMethod: () => void }
+
+if(typeof w === 'object' && w!== null ) {
+    (w as {runANonExistMethod: () => void}).runANonExistMethod();
+}
