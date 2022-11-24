@@ -1,8 +1,8 @@
 enum CaditionalDirections {
-    North = 1 ,
-    East,
-    South,
-    west
+    North = "North" ,
+    East = "East", 
+    South = " Souh",
+    west = "West"
 }
 
 let currentDirection = CaditionalDirections.East;
